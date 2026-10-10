@@ -6,7 +6,7 @@
 **Dashboards**
 
 - Dashboard Looker Studio - https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2
-- Dashboard Power BI - [https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2](https://drive.google.com/file/d/1TtH76F-wIBZsDbf7GiRb9silFvIT5EMG/view?usp=sharing)
+- Dashboard Power BI - [arquivo .pbix no Google Drive](https://drive.google.com/file/d/1TtH76F-wIBZsDbf7GiRb9silFvIT5EMG/view?usp=sharing)
 
 **Obs:.** **O último tópico** explica cada arquivo presente na pasta acima;
 
@@ -15,7 +15,7 @@
 
 Este projeto tem como objetivo comparar, de forma aplicada, duas das ferramentas mais utilizadas atualmente: Power BI (Microsoft) e Looker Studio (Google).
 
-A análise será conduzida a partir de um dataset de e-commerce do Kanggle, e a comparação considerará aspectos fundamentais como:
+A análise será conduzida a partir de um dataset de e-commerce do Kaggle, e a comparação considerará aspectos fundamentais como:
 
 - Facilidade de uso e curva de aprendizado
 - Performance e tempo de carregamento
@@ -24,7 +24,7 @@ A análise será conduzida a partir de um dataset de e-commerce do Kanggle, e a 
 - Integração com outras ferramentas
 - Custo e escalabilidade
 
-Para garantir que a comparação será isonoma, no projeto será utilizado os mesmos indicadores e gráficos nas duas ferramentas (Power BI e Looker). Além disso, será implementado um pipeline completo e automatizado, com as seguintes etapas:
+Para garantir que a comparação seja isonômica, no projeto será utilizado os mesmos indicadores e gráficos nas duas ferramentas (Power BI e Looker). Além disso, será implementado um pipeline completo e automatizado, com as seguintes etapas:
 
 - **Etapa 1 - Kaggle:** API para extração do database automatizada;
 - **Etapa 2 - Google Colab (*Python*):** Processo de ETL (Extract, Transformation and Load);
@@ -45,7 +45,7 @@ A extração dos *datasets* será realizado direto do Google Colab por meio da A
 
 ## Etapa 2 - Google Colab - Processo de ETL
 
-O arquivo `projeto_visao360_ecommerce.ipynb`, construido no Google Colab utilizando a linguagem python, anexado neste repositório está divido em 4 partes na qual foi realizado o processo de conexão com Kaggle, ETL e conexão dos dados tratados com o *Bigquery*. Segue um resumo sobre cada parte do código:
+O arquivo `projeto_visao360_ecommerce.ipynb`, construido no Google Colab utilizando a linguagem python, disponível na pasta do projeto no Google Drive (link no topo), está dividido em 4 partes na qual foi realizado o processo de conexão com Kaggle, ETL e conexão dos dados tratados com o *Bigquery*. Segue um resumo sobre cada parte do código:
 
 - **Parte 1 - Conexão Kaggle <> Google Colab:** Esta etapa foca em configurar o ambiente do Google Colab para acessar os dados do Kaggle. Isso envolve montar o Google Drive para persistência e acesso a credenciais (`kaggle.json`), instalar a biblioteca Kaggle, e então usar a API do Kaggle para baixar o dataset olistbr/brazilian-ecommerce para o ambiente do Colab, descompactando-o em uma pasta específica.
 
